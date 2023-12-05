@@ -1,8 +1,13 @@
 #include <iostream>
 #include <SDL.h>
-
+#include "lib/stb/AudioFile.h"
 
 int main(int argc, char* argv[]) {
+
+//    AudioFile<double> audioFile;
+//    audioFile.load ("sample/Steps.mp3");
+//    int sampleRate = audioFile.getSampleRate();
+//    std::cout << sampleRate;
     // Initialize SDL
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
         SDL_Log("Unable to initialize SDL: %s", SDL_GetError());

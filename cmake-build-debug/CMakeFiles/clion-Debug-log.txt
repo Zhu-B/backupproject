@@ -159,6 +159,6 @@
 [7/7] Completed 'sdl2_image-populate'
 -- Configuring SDL2_image 2.6.3
 -- Could NOT find SDL2main (missing: SDL2_MAIN_LIBRARY) 
--- Configuring done (1.0s)
+-- Configuring done (0.8s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug

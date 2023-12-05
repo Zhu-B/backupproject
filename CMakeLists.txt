@@ -3,7 +3,9 @@ project(backupprogram)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(backupprogram main.cpp)
+add_executable(backupprogram
+        main.cpp
+        lib/stb/AudioFile.h)
 
 include(FetchContent)
 set(FETCHCONTENT_QUIET FALSE)
