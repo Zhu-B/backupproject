@@ -1,4 +1,6 @@
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/backupprogram.dir
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/package.dir
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/package_source.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir
@@ -6,10 +8,14 @@ C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/CM
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/CMakeFiles/SDL2-static.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/CMakeFiles/SDL2_test.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/CMakeFiles/uninstall.dir
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/CMakeFiles/package.dir
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/CMakeFiles/package_source.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/CMakeFiles/edit_cache.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/CMakeFiles/rebuild_cache.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-build/CMakeFiles/SDL2_image.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-build/CMakeFiles/showanim.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-build/CMakeFiles/showimage.dir
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-build/CMakeFiles/package.dir
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-build/CMakeFiles/package_source.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-build/CMakeFiles/edit_cache.dir
 C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,14 @@
+# Target labels
+ portaudio-populate
+# Source files and their labels
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/CMakeFiles/portaudio-populate
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/CMakeFiles/portaudio-populate.rule
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/CMakeFiles/portaudio-populate-complete.rule
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/portaudio-populate-prefix/src/portaudio-populate-stamp/portaudio-populate-build.rule
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/portaudio-populate-prefix/src/portaudio-populate-stamp/portaudio-populate-configure.rule
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/portaudio-populate-prefix/src/portaudio-populate-stamp/portaudio-populate-download.rule
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/portaudio-populate-prefix/src/portaudio-populate-stamp/portaudio-populate-install.rule
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/portaudio-populate-prefix/src/portaudio-populate-stamp/portaudio-populate-mkdir.rule
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/portaudio-populate-prefix/src/portaudio-populate-stamp/portaudio-populate-patch.rule
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/portaudio-populate-prefix/src/portaudio-populate-stamp/portaudio-populate-test.rule
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/portaudio-subbuild/portaudio-populate-prefix/src/portaudio-populate-stamp/portaudio-populate-update.rule

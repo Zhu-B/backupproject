@@ -1,0 +1,3 @@
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/opencv-subbuild/CMakeFiles/opencv-populate.dir
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/opencv-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/opencv-subbuild/CMakeFiles/rebuild_cache.dir

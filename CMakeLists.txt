@@ -41,3 +41,22 @@ target_link_libraries("${PROJECT_NAME}"
         SDL2::SDL2main
         SDL2::SDL2-static
         SDL2_image::SDL2_image-static)
+
+
+
+
+#FetchContent_Declare(
+#        opencv
+#        GIT_REPOSITORY https://github.com/opencv/opencv.git
+#        GIT_TAG        4.4.0
+#)
+#if (NOT opencv_POPULATED)
+#    FetchContent_Populate(opencv)
+#endif ()
+#FetchContent_MakeAvailable(opencv)
+#
+## Find on pc
+#set(OpenCV_DIR ${CMAKE_CURRENT_BINARY_DIR})
+#include_directories(${OpenCV_INCLUDE_DIRS})
+#find_package(OpenCV REQUIRED)
+#target_link_libraries("${PROJECT_NAME}" ${OpenCV_LIBS})

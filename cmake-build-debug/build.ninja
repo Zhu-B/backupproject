@@ -62,17 +62,41 @@ build CMakeFiles/backupprogram.dir/main.cpp.obj: CXX_COMPILER__backupprogram_uns
 
 
 #############################################
-# Link the executable backupprogram.exe
+# Link the executable bin\backupprogram.exe
 
-build backupprogram.exe: CXX_EXECUTABLE_LINKER__backupprogram_Debug CMakeFiles/backupprogram.dir/main.cpp.obj | _deps/sdl2-build/libSDL2maind.a _deps/sdl2-build/libSDL2d.a _deps/sdl2_image-build/libSDL2_imaged.a _deps/sdl2-build/libSDL2d.a || _deps/sdl2-build/libSDL2d.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2_image-build/libSDL2_imaged.a
+build bin/backupprogram.exe: CXX_EXECUTABLE_LINKER__backupprogram_Debug CMakeFiles/backupprogram.dir/main.cpp.obj | _deps/sdl2-build/libSDL2maind.a _deps/sdl2-build/libSDL2d.a _deps/sdl2_image-build/libSDL2_imaged.a _deps/sdl2-build/libSDL2d.a || _deps/sdl2-build/libSDL2d.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2_image-build/libSDL2_imaged.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/sdl2-build/libSDL2maind.a  _deps/sdl2-build/libSDL2d.a  _deps/sdl2_image-build/libSDL2_imaged.a  -Wl,--undefined=WinMain  _deps/sdl2-build/libSDL2d.a  -lm  -lkernel32  -luser32  -lgdi32  -lwinmm  -limm32  -lole32  -loleaut32  -lversion  -luuid  -ladvapi32  -lsetupapi  -lshell32  -ldinput8  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\backupprogram.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = backupprogram.exe
-  TARGET_IMPLIB = libbackupprogram.dll.a
+  TARGET_FILE = bin\backupprogram.exe
+  TARGET_IMPLIB = bin\libbackupprogram.dll.a
   TARGET_PDB = backupprogram.exe.dbg
+
+
+#############################################
+# Utility command for package
+
+build CMakeFiles/package.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Rate\Desktop\cs3520\backupproject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build package: phony CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Rate\Desktop\cs3520\backupproject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build package_source: phony CMakeFiles/package_source.util
 
 
 #############################################
@@ -1847,6 +1871,30 @@ build _deps/sdl2-build/uninstall: phony _deps/sdl2-build/CMakeFiles/uninstall
 
 
 #############################################
+# Utility command for package
+
+build _deps/sdl2-build/CMakeFiles/package.util: CUSTOM_COMMAND _deps/sdl2-build/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Rate\Desktop\cs3520\backupproject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/sdl2-build/package: phony _deps/sdl2-build/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/sdl2-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Rate\Desktop\cs3520\backupproject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/sdl2-build/package_source: phony _deps/sdl2-build/CMakeFiles/package_source.util
+
+
+#############################################
 # Utility command for edit_cache
 
 build _deps/sdl2-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -2794,17 +2842,17 @@ build _deps/sdl2_image-build/CMakeFiles/showanim.dir/showanim.c.obj: C_COMPILER_
 
 
 #############################################
-# Link the executable _deps\sdl2_image-build\showanim.exe
+# Link the executable bin\showanim.exe
 
-build _deps/sdl2_image-build/showanim.exe: C_EXECUTABLE_LINKER__showanim_Debug _deps/sdl2_image-build/CMakeFiles/showanim.dir/showanim.c.obj | _deps/sdl2_image-build/libSDL2_imaged.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2-build/libSDL2d.a || _deps/sdl2-build/libSDL2d.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2_image-build/libSDL2_imaged.a
+build bin/showanim.exe: C_EXECUTABLE_LINKER__showanim_Debug _deps/sdl2_image-build/CMakeFiles/showanim.dir/showanim.c.obj | _deps/sdl2_image-build/libSDL2_imaged.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2-build/libSDL2d.a || _deps/sdl2-build/libSDL2d.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2_image-build/libSDL2_imaged.a
   FLAGS = -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = -lmingw32  _deps/sdl2_image-build/libSDL2_imaged.a  _deps/sdl2-build/libSDL2maind.a  _deps/sdl2-build/libSDL2d.a  -lm  -lkernel32  -luser32  -lgdi32  -lwinmm  -limm32  -lole32  -loleaut32  -lversion  -luuid  -ladvapi32  -lsetupapi  -ldinput8  -lshell32  -Wl,--undefined=WinMain  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = _deps\sdl2_image-build\CMakeFiles\showanim.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = _deps\sdl2_image-build\showanim.exe
-  TARGET_IMPLIB = _deps\sdl2_image-build\libshowanim.dll.a
+  TARGET_FILE = bin\showanim.exe
+  TARGET_IMPLIB = bin\libshowanim.dll.a
   TARGET_PDB = showanim.exe.dbg
 
 # =============================================================================
@@ -2829,18 +2877,42 @@ build _deps/sdl2_image-build/CMakeFiles/showimage.dir/showimage.c.obj: C_COMPILE
 
 
 #############################################
-# Link the executable _deps\sdl2_image-build\showimage.exe
+# Link the executable bin\showimage.exe
 
-build _deps/sdl2_image-build/showimage.exe: C_EXECUTABLE_LINKER__showimage_Debug _deps/sdl2_image-build/CMakeFiles/showimage.dir/showimage.c.obj | _deps/sdl2_image-build/libSDL2_imaged.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2-build/libSDL2d.a || _deps/sdl2-build/libSDL2d.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2_image-build/libSDL2_imaged.a
+build bin/showimage.exe: C_EXECUTABLE_LINKER__showimage_Debug _deps/sdl2_image-build/CMakeFiles/showimage.dir/showimage.c.obj | _deps/sdl2_image-build/libSDL2_imaged.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2-build/libSDL2d.a || _deps/sdl2-build/libSDL2d.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2_image-build/libSDL2_imaged.a
   FLAGS = -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = -lmingw32  _deps/sdl2_image-build/libSDL2_imaged.a  _deps/sdl2-build/libSDL2maind.a  _deps/sdl2-build/libSDL2d.a  -lm  -lkernel32  -luser32  -lgdi32  -lwinmm  -limm32  -lole32  -loleaut32  -lversion  -luuid  -ladvapi32  -lsetupapi  -ldinput8  -lshell32  -Wl,--undefined=WinMain  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = _deps\sdl2_image-build\CMakeFiles\showimage.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = _deps\sdl2_image-build\showimage.exe
-  TARGET_IMPLIB = _deps\sdl2_image-build\libshowimage.dll.a
+  TARGET_FILE = bin\showimage.exe
+  TARGET_IMPLIB = bin\libshowimage.dll.a
   TARGET_PDB = showimage.exe.dbg
+
+
+#############################################
+# Utility command for package
+
+build _deps/sdl2_image-build/CMakeFiles/package.util: CUSTOM_COMMAND _deps/sdl2_image-build/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\Rate\Desktop\cs3520\backupproject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/sdl2_image-build/package: phony _deps/sdl2_image-build/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/sdl2_image-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Rate\Desktop\cs3520\backupproject\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/sdl2_image-build/package_source: phony _deps/sdl2_image-build/CMakeFiles/package_source.util
 
 
 #############################################
@@ -2876,7 +2948,9 @@ build SDL2_test: phony _deps/sdl2-build/libSDL2_test.a
 
 build SDL2main: phony _deps/sdl2-build/libSDL2maind.a
 
-build backupprogram: phony backupprogram.exe
+build backupprogram: phony bin/backupprogram.exe
+
+build backupprogram.exe: phony bin/backupprogram.exe
 
 build libSDL2_imaged.a: phony _deps/sdl2_image-build/libSDL2_imaged.a
 
@@ -2888,13 +2962,13 @@ build libSDL2maind.a: phony _deps/sdl2-build/libSDL2maind.a
 
 build sdl_headers_copy: phony _deps/sdl2-build/sdl_headers_copy
 
-build showanim: phony _deps/sdl2_image-build/showanim.exe
+build showanim: phony bin/showanim.exe
 
-build showanim.exe: phony _deps/sdl2_image-build/showanim.exe
+build showanim.exe: phony bin/showanim.exe
 
-build showimage: phony _deps/sdl2_image-build/showimage.exe
+build showimage: phony bin/showimage.exe
 
-build showimage.exe: phony _deps/sdl2_image-build/showimage.exe
+build showimage.exe: phony bin/showimage.exe
 
 build uninstall: phony _deps/sdl2-build/uninstall
 
@@ -2906,7 +2980,7 @@ build uninstall: phony _deps/sdl2-build/uninstall
 #############################################
 # Folder: C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug
 
-build all: phony backupprogram.exe _deps/sdl2-build/all _deps/sdl2_image-build/all
+build all: phony bin/backupprogram.exe _deps/sdl2-build/all _deps/sdl2_image-build/all
 
 # =============================================================================
 
@@ -2920,7 +2994,7 @@ build _deps/sdl2-build/all: phony _deps/sdl2-build/libSDL2maind.a _deps/sdl2-bui
 #############################################
 # Folder: C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-build
 
-build _deps/sdl2_image-build/all: phony _deps/sdl2_image-build/libSDL2_imaged.a _deps/sdl2_image-build/showanim.exe _deps/sdl2_image-build/showimage.exe
+build _deps/sdl2_image-build/all: phony _deps/sdl2_image-build/libSDL2_imaged.a bin/showanim.exe bin/showimage.exe
 
 # =============================================================================
 # Built-in targets
