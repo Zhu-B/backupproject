@@ -159,6 +159,30 @@
 [7/7] Completed 'sdl2_image-populate'
 -- Configuring SDL2_image 2.6.3
 -- Could NOT find SDL2main (missing: SDL2_MAIN_LIBRARY) 
--- Configuring done (0.8s)
+-- Populating cimg
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug
+-- Build files have been written to: C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/cimg-subbuild
+[0/7] Performing update step for 'cimg-populate'
+[1/7] No patch step for 'cimg-populate'
+[3/7] No configure step for 'cimg-populate'
+[4/7] No build step for 'cimg-populate'
+[5/7] No install step for 'cimg-populate'
+[6/7] No test step for 'cimg-populate'
+[7/7] Completed 'cimg-populate'
+-- Configuring done (2.1s)
+CMake Error at CMakeLists.txt:58 (target_link_libraries):
+  Target "backupprogram" links to:
+
+    CImg::CImg
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+
+
+-- Generating done (0.1s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.

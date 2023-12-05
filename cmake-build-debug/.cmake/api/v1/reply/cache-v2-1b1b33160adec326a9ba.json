@@ -3631,7 +3631,7 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Enables UPDATE_DISCONNECTED behavior just for population of cimg"
+					"value" : "Enables UPDATE_DISCONNECTED behavior just for population of CImg"
 				}
 			],
 			"type" : "BOOL",

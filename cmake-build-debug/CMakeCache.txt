@@ -403,7 +403,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/ld.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -683,7 +683,7 @@ FETCHCONTENT_SOURCE_DIR_SDL2_IMAGE:PATH=
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
-//Enables UPDATE_DISCONNECTED behavior just for population of cimg
+//Enables UPDATE_DISCONNECTED behavior just for population of CImg
 FETCHCONTENT_UPDATES_DISCONNECTED_CIMG:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of opencv

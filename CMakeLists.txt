@@ -26,10 +26,10 @@ FetchContent_Declare(
         GIT_PROGRESS    TRUE
 )
 
-# START ADDITION
+
 set(SDL2IMAGE_INSTALL OFF)
 set(BUILD_SHARED_LIBS FALSE)
-# END ADDITION
+
 
 FetchContent_MakeAvailable(
         SDL2
@@ -47,18 +47,13 @@ target_link_libraries("${PROJECT_NAME}"
 
 
 
-#FetchContent_Declare(
-#        opencv
-#        GIT_REPOSITORY https://github.com/opencv/opencv.git
-#        GIT_TAG        4.4.0
-#)
-#if (NOT opencv_POPULATED)
-#    FetchContent_Populate(opencv)
-#endif ()
-#FetchContent_MakeAvailable(opencv)
-#
-## Find on pc
-#set(OpenCV_DIR ${CMAKE_CURRENT_BINARY_DIR})
-#include_directories(${OpenCV_INCLUDE_DIRS})
-#find_package(OpenCV REQUIRED)
-#target_link_libraries("${PROJECT_NAME}" ${OpenCV_LIBS})
+FetchContent_Declare(
+        CImg
+        GIT_REPOSITORY  https://github.com/GreycLab/CImg.git
+        GIT_TAG         master
+)
+
+FetchContent_MakeAvailable(CImg)
+
+target_link_libraries(${PROJECT_NAME}
+        CImg::CImg)

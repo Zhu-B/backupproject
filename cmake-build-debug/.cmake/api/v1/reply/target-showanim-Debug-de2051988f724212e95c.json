@@ -125,7 +125,7 @@
 	[
 		{
 			"backtrace" : 4,
-			"id" : "SDL2_image::@de341d98faad78faee90"
+			"id" : "SDL2-static::@45bd952f1071c035638d"
 		},
 		{
 			"backtrace" : 5,
@@ -133,7 +133,7 @@
 		},
 		{
 			"backtrace" : 4,
-			"id" : "SDL2-static::@45bd952f1071c035638d"
+			"id" : "SDL2_image::@de341d98faad78faee90"
 		}
 	],
 	"id" : "showanim::@de341d98faad78faee90",

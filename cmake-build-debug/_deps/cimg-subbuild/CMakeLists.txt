@@ -21,7 +21,7 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(cimg-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/dtschump/CImg.git" "GIT_TAG" "master"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/GreycLab/CImg.git" "GIT_TAG" "master"
                     SOURCE_DIR          "C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/cimg-src"
                     BINARY_DIR          "C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/cimg-build"
                     CONFIGURE_COMMAND   ""
