@@ -52,9 +52,30 @@ build cmake_object_order_depends_target_backupprogram: phony || cmake_object_ord
 build CMakeFiles/backupprogram.dir/main.cpp.obj: CXX_COMPILER__backupprogram_unscanned_Debug C$:/Users/Rate/Desktop/cs3520/backupproject/main.cpp || cmake_object_order_depends_target_backupprogram
   DEP_FILE = CMakeFiles\backupprogram.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Rate/Desktop/cs3520/backupproject/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-src
+  INCLUDES = -IC:/Users/Rate/Desktop/cs3520/backupproject/lib/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-src
   OBJECT_DIR = CMakeFiles\backupprogram.dir
   OBJECT_FILE_DIR = CMakeFiles\backupprogram.dir
+
+build CMakeFiles/backupprogram.dir/lib/stb/stb_vorbis.c.obj: C_COMPILER__backupprogram_unscanned_Debug C$:/Users/Rate/Desktop/cs3520/backupproject/lib/stb/stb_vorbis.c || cmake_object_order_depends_target_backupprogram
+  DEP_FILE = CMakeFiles\backupprogram.dir\lib\stb\stb_vorbis.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Rate/Desktop/cs3520/backupproject/lib/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-src
+  OBJECT_DIR = CMakeFiles\backupprogram.dir
+  OBJECT_FILE_DIR = CMakeFiles\backupprogram.dir\lib\stb
+
+build CMakeFiles/backupprogram.dir/lib/src/setup.cpp.obj: CXX_COMPILER__backupprogram_unscanned_Debug C$:/Users/Rate/Desktop/cs3520/backupproject/lib/src/setup.cpp || cmake_object_order_depends_target_backupprogram
+  DEP_FILE = CMakeFiles\backupprogram.dir\lib\src\setup.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Rate/Desktop/cs3520/backupproject/lib/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-src
+  OBJECT_DIR = CMakeFiles\backupprogram.dir
+  OBJECT_FILE_DIR = CMakeFiles\backupprogram.dir\lib\src
+
+build CMakeFiles/backupprogram.dir/lib/src/Button.cpp.obj: CXX_COMPILER__backupprogram_unscanned_Debug C$:/Users/Rate/Desktop/cs3520/backupproject/lib/src/Button.cpp || cmake_object_order_depends_target_backupprogram
+  DEP_FILE = CMakeFiles\backupprogram.dir\lib\src\Button.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Rate/Desktop/cs3520/backupproject/lib/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2-build/include-config-debug/SDL2 -IC:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/sdl2_image-src
+  OBJECT_DIR = CMakeFiles\backupprogram.dir
+  OBJECT_FILE_DIR = CMakeFiles\backupprogram.dir\lib\src
 
 
 # =============================================================================
@@ -64,7 +85,7 @@ build CMakeFiles/backupprogram.dir/main.cpp.obj: CXX_COMPILER__backupprogram_uns
 #############################################
 # Link the executable bin\backupprogram.exe
 
-build bin/backupprogram.exe: CXX_EXECUTABLE_LINKER__backupprogram_Debug CMakeFiles/backupprogram.dir/main.cpp.obj | _deps/sdl2-build/libSDL2maind.a _deps/sdl2-build/libSDL2d.a _deps/sdl2_image-build/libSDL2_imaged.a _deps/sdl2-build/libSDL2d.a || _deps/sdl2-build/libSDL2d.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2_image-build/libSDL2_imaged.a
+build bin/backupprogram.exe: CXX_EXECUTABLE_LINKER__backupprogram_Debug CMakeFiles/backupprogram.dir/main.cpp.obj CMakeFiles/backupprogram.dir/lib/stb/stb_vorbis.c.obj CMakeFiles/backupprogram.dir/lib/src/setup.cpp.obj CMakeFiles/backupprogram.dir/lib/src/Button.cpp.obj | _deps/sdl2-build/libSDL2maind.a _deps/sdl2-build/libSDL2d.a _deps/sdl2_image-build/libSDL2_imaged.a _deps/sdl2-build/libSDL2d.a || _deps/sdl2-build/libSDL2d.a _deps/sdl2-build/libSDL2maind.a _deps/sdl2_image-build/libSDL2_imaged.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/sdl2-build/libSDL2maind.a  _deps/sdl2-build/libSDL2d.a  _deps/sdl2_image-build/libSDL2_imaged.a  -Wl,--undefined=WinMain  _deps/sdl2-build/libSDL2d.a  -lm  -lkernel32  -luser32  -lgdi32  -lwinmm  -limm32  -lole32  -loleaut32  -lversion  -luuid  -ladvapi32  -lsetupapi  -lshell32  -ldinput8  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\backupprogram.dir

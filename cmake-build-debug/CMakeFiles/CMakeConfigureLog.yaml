@@ -11071,3 +11071,32 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "cmake-build-debug/_deps/pdfhummus-src/LibTiff/CMakeLists.txt:75 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0dv04o"
+      binary: "C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0dv04o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/pdfhummus-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "T_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0dv04o
+        
+        Run Build Command(s):C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_403b1 && [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles/cmTC_403b1.dir/CheckIncludeFile.c.obj -c C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0dv04o/CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_403b1.dir/CheckIncludeFile.c.obj -o cmTC_403b1.exe -Wl,--out-implib,libcmTC_403b1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...

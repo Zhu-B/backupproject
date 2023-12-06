@@ -669,6 +669,10 @@ FETCHCONTENT_SOURCE_DIR_CIMG:PATH=
 FETCHCONTENT_SOURCE_DIR_OPENCV:PATH=
 
 //When not empty, overrides where to find pre-populated content
+// for PDFHummus
+FETCHCONTENT_SOURCE_DIR_PDFHUMMUS:PATH=
+
+//When not empty, overrides where to find pre-populated content
 // for portaudio
 FETCHCONTENT_SOURCE_DIR_PORTAUDIO:PATH=
 
@@ -688,6 +692,9 @@ FETCHCONTENT_UPDATES_DISCONNECTED_CIMG:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of opencv
 FETCHCONTENT_UPDATES_DISCONNECTED_OPENCV:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of PDFHummus
+FETCHCONTENT_UPDATES_DISCONNECTED_PDFHUMMUS:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of portaudio
 FETCHCONTENT_UPDATES_DISCONNECTED_PORTAUDIO:BOOL=OFF
@@ -974,6 +981,25 @@ OpenMP_C_LIB_NAMES:STRING=
 
 //Allow building parallel plugin support
 PARALLEL_ENABLE_PLUGINS:BOOL=ON
+
+//Whether to drop support for DCT streams parsing (will not use
+// LibJpeg)
+PDFHUMMUS_NO_DCT:BOOL=OFF
+
+//Whether to drop PNG Images support (will not use LibPng)
+PDFHUMMUS_NO_PNG:BOOL=OFF
+
+//Whether to drop TIFF Images support (will not use LibTiff)
+PDFHUMMUS_NO_TIFF:BOOL=OFF
+
+//Value Computed by CMake
+PDFHummus_BINARY_DIR:STATIC=C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/pdfhummus-build
+
+//Value Computed by CMake
+PDFHummus_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+PDFHummus_SOURCE_DIR:STATIC=C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/pdfhummus-src
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -1379,6 +1405,13 @@ SDL_X11:BOOL=OFF
 
 //Use Xinput for Windows
 SDL_XINPUT:BOOL=ON
+
+//Whether to use bundled libraries
+USE_BUNDLED:BOOL=ON
+
+//When USE_BUNDLED is false and a certain system library is not
+// available should fallback on bundled lib
+USE_UNBUNDLED_FALLBACK_BUNDLED:BOOL=OFF
 
 //Use win32 IO system (Microsoft Windows only)
 USE_WIN32_FILEIO:BOOL=TRUE
@@ -3869,6 +3902,8 @@ OpenMP_C_LIB_NAMES-ADVANCED:INTERNAL=1
 OpenMP_C_SPEC_DATE:INTERNAL=201511
 //Result of TRY_COMPILE
 OpenMP_SPECTEST_C_:INTERNAL=TRUE
+//Redirected by FetchContent
+PDFHummus_DIR:INTERNAL=C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/CMakeFiles/pkgRedirects
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
@@ -3928,6 +3963,8 @@ SIZEOF_UNSIGNED_SHORT:INTERNAL=2
 STDC_HEADERS:INTERNAL=1
 TIFF_INCLUDE_DIR:INTERNAL=C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/opencv-src/3rdparty/libtiff;C:/Users/Rate/Desktop/cs3520/backupproject/cmake-build-debug/_deps/opencv-build/3rdparty/libtiff
 TIFF_LIBRARY:INTERNAL=libtiff
+//Have include unistd.h
+T_HAVE_UNISTD_H:INTERNAL=1
 //ADVANCED property for variable: VIDEOIO_ENABLE_PLUGINS
 VIDEOIO_ENABLE_PLUGINS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VIDEOIO_PLUGIN_LIST

@@ -5,7 +5,13 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(backupprogram
         main.cpp
-        lib/stb/AudioFile.h)
+        lib/stb/stb_vorbis.c
+        lib/stb/stb_hexwave.h
+        lib/src/setup.cpp
+        lib/include/setup.h
+        lib/src/Button.cpp
+        lib/include/Button.h
+)
 
 include(FetchContent)
 set(FETCHCONTENT_QUIET FALSE)
@@ -36,7 +42,7 @@ FetchContent_MakeAvailable(
         SDL2_IMAGE)
 
 set(SDL_LIBRARIES ${SDL_LIBRARIES} SDL2main SDL2-static SDL2_image-static)
-target_include_directories("${PROJECT_NAME}" PRIVATE include)
+#target_include_directories("${PROJECT_NAME}" PRIVATE include)
 
 #target_link_libraries("${PROJECT_NAME}" PRIVATE ${SDL_LIBRARIES})
 target_link_libraries("${PROJECT_NAME}"
@@ -44,16 +50,4 @@ target_link_libraries("${PROJECT_NAME}"
         SDL2::SDL2-static
         SDL2_image::SDL2_image-static)
 
-
-
-
-FetchContent_Declare(
-        CImg
-        GIT_REPOSITORY  https://github.com/GreycLab/CImg.git
-        GIT_TAG         master
-)
-
-FetchContent_MakeAvailable(CImg)
-
-target_link_libraries(${PROJECT_NAME}
-        CImg::CImg)
+target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE lib/include)
